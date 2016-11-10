@@ -1,7 +1,7 @@
 install:
   - cmd: java -version
   # - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-  - mvn -T 2 -Ptravis -DskipTests=true -B -V install
+  - mvn -Drat.skip=true -T 2 -Ptravis -DskipTests=true -B -V install
 
 test_script:
   # - mvn test -B 
