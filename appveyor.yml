@@ -1,5 +1,5 @@
 install:
-  - cmd: java -version
+  - cmd: ver
   # - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
   - mvn -Drat.skip=true -T 2 -Ptravis -DskipTests=true -B -V install
 
@@ -8,6 +8,6 @@ test_script:
   - mvn -T 2 -Ptravis test
 
 cache:
-  - '%HOMEPATH%\.m2' 
+  - 'C:\Users\%USERNAME%\.m2\repository'
 
 build: off
